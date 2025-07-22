@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><h1>Malla interactiva - Ingeniería de Sistemas</h1></li>
+                <li><button id="toggle-theme">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="ciclo">
+        <h2>Ciclo 1</h2>
+        <div class="grid">
+            <div class="course" data-name="MateBas">Matemática Básica</div>
+            <div class="course" data-name="CPL1">Comprensión y Producción de Lenguaje I</div>
+            <div class="course" data-name="FundaProgra">Fundamentos en Programación</div>
+            <div class="course" data-name="CreatLid">Creatividad y Liderazgo</div>
+            <div class="course" data-name="EtiCiu">Ética y Ciudadanía</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ciclo 2</h2>
+        <div class="grid" id="malla">
+            <div class="course" data-name="Calculo1" data-prereq="MateBas">Cálculo I</div>
+            <div class="course" data-name="Ode">Organización y Dirección de Empresas</div>
+            <div class="course" data-name="SemInv1" data-prereq="CPL1">Seminario de Investigación Académica I</div>
+            <div class="course" data-name="CPL2" data-prereq="CPL1">Comprensión y Producción de Lenguaje II</div>
+            <div class="course" data-name="POO" data-prereq="FundaProgra">Programación Orientado a Objetos</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ciclo 3</h2>
+        <div class="grid" id="malla">
+            <div class="course" data-name="Fis1" data-prereq="Calculo1">Física I</div>
+            <div class="course" data-name="Reque" data-prereq="Ode">Especificación y Análisis de Requerimientos</div>
+            <div class="course" data-name="Conta" data-prereq="Ode">Contabilidad y Presupuestos</div>
+            <div class="course" data-name="DBD" data-prereq="FundaProgra">Diseño de Base de Datos</div>
+            <div class="course" data-name="MateDis" data-prereq="MateBas">Matemática Discreta</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ciclo 4</h2>
+        <div class="grid" id="malla">
+            <div class="course" data-name="Fis2" data-prereq="Fis1">Física II</div>
+            <div class="course" data-name="MateCom" data-prereq="Calculo1">Matemática Computacional</div>
+            <div class="course" data-name="IHC" data-prereq="Reque">IHC y Tecnologías Móviles</div>
+            <div class="course" data-name="ArqCSO" data-prereq="MateDis">Arquitectura de Computadoras y Sistemas Operativos</div>
+            <div class="course" data-name="Elect">Electivo</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ciclo 5</h2>
+        <div class="grid" id="malla">
+            <div class="course" data-name="EstApli" data-prereq="Calculo1">Estadística Aplicada</div>
+            <div class="course" data-name="Calculo2" data-prereq="Calculo1">Calculo II</div>
+            <div class="course" data-name="ArqNeg" data-prereq="IHC">Arquitectura de Negocio</div>
+            <div class="course" data-name="FunSist" data-prereq="DBD">Fundamentos de Sistemas de Información</div>
+            <div class="course" data-name="Elect1">Electivo</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ciclo 6</h2>
+        <div class="grid" id="malla">
+            <div class="course" data-name="DESI" data-prereq="EstApli">Diseño de Experimentos en SI</div>
+            <div class="course" data-name="ENS" data-prereq="Conta">Emprendimiento de Negocios Sostenibles: Formulación</div>
+            <div class="course" data-name="ArqApl" data-prereq="FunSist">Arquitectua de Aplicaciones Web</div>
+            <div class="course" data-name="RedesComu" data-prereq="ArqCSO">Redes y Comunicaciones de Datos</div>
+            <div class="course" data-name="Elect2">Electivo</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ciclo 7</h2>
+        <div class="grid" id="malla">
+            <div class="course" data-name="ArqEmp" data-prereq="ArqNeg">Arquitectura Empresarial</div>
+            <div class="course" data-name="GerPro" data-prereq="ArqNeg">Gerencia de Proyectos de SI/TI</div>
+            <div class="course" data-name="GestSeg" data-prereq="ArqNeg">Gestión de Seguridad de Información</div>
+            <div class="course" data-name="ImpSist" data-prereq="ArqApl">Implementación de Sistemas Empresariales</div>
+            <div class="course" data-name="Elect3">Electivo</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ciclo 8</h2>
+        <div class="grid" id="malla">
+            <div class="course" data-name="TDes" data-prereq="DESI">Taller de Desempeño Profesional</div>
+            <div class="course" data-name="TechSal" data-prereq="IHC">Technical Sales and Marketing</div>
+            <div class="course" data-name="FIE" data-prereq="Conta">Finanzas e Ingeniería Económica</div>
+            <div class="course" data-name="SemInv2" data-prereq="SemInv1">Seminario de Investigación Académica II</div>
+            <div class="course" data-name="Elect4">Electivo</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ciclo 9</h2>
+        <div class="grid" id="malla">
+            <div class="course" data-name="BussPre" data-prereq="EstApli">Business Precictive Analytics</div>
+            <div class="course" data-name="TallPro1" data-prereq="GerPro">Taller de Proyecto I</div>
+            <div class="course" data-name="Elect5">Electivo</div>
+            <div class="course" data-name="Elect6">Electivo</div>
+            <div class="course" data-name="Elect7">Electivo</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ciclo 10</h2>
+        <div class="grid" id="malla">
+            <div class="course" data-name="TallPro2" data-prereq="TallPro1">Curso de Trabajo de Investigación - Taller de Poryecto II</div>
+            <div class="course" data-name="GestTec" data-prereq="ArqEmp">Gestión de Tecnologías de Información</div>
+            <div class="course" data-name="Elect8">Electivo</div>
+            <div class="course" data-name="Elect9">Electivo</div>
+            <div class="course" data-name="Elect10">Electivo</div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
